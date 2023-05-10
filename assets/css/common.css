@@ -14,7 +14,12 @@
 .section-group1 .ico-search,
 .section-group2 .job-list span::after,
 .footer .footerRight-area button::before,
-.section-group5 span.apply-link{
+.section-group5 span.apply-link,
+.section-group3 .swiper-button-next,
+.section-group3 .swiper-button-prev,
+.section-group3 .swiper-button-disabled,
+.section-group3 .swiper-button-disabled
+{
     background-image: url(../img/sp-bg.png);
     background-size: 328px 205px;
 }
@@ -34,6 +39,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    display: none;
 }
 
 .inner{

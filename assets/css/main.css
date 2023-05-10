@@ -187,13 +187,128 @@
     -webkit-box-sizing: border-box;
 }
 
+.section-group3{
+    padding: 95px 0 0;
+}
+.section-group3 .swiper{
+    overflow: unset;
+}
+.section-group3 .tit-area{
+    margin-bottom: 60px;
+}
+.section-group3 .slide-area2{}
+.section-group3 .slide-area2 .swiper-slide{
+    padding-bottom: 68px;
+    width: 1097px !important;
+
+}
+.section-group3 .swiper-slide .img-wrap{
+    height: 520px;
+}
+.section-group3 .slide-area2 img{
+    object-fit: cover;
+}
+.section-group3 .slide-area2 .text-wrap{
+    margin-top: 29px;
+}
+.section-group3 .text-wrap .tit-box{
+    font-size: 25px;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+}
+.section-group3 .tit-box span{
+    position: relative;
+    top: -15px;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: -0.36px;
+    margin-left: 26px;
+}
+.section-group3 .tit-box span::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #000;
+}
+.section-group3 .text-wrap .info-box{}
+.section-group3 .info-box p{
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.28px;
+}
+.section-group3 .info-box span{
+    position: relative;
+    margin-left: 12px;
+}
+.section-group3 .info-box span::before{
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 4px;
+    width: 1px;
+    height: 10px;
+    background-color: #000;
+}
+.section-group3 .button-wrap{
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    display: flex;
+    gap: 10px;
+}
+.section-group3 .swiper-button-next{
+    position: unset;
+    background-position: -113px -172px;
+    height: 32px;
+    width: 33px;
+}
+.section-group3 .swiper-button-prev{
+    position: unset;
+    background-position: -187px -172px;
+    height: 32px;
+    width: 33px;
+}
+
+.section-group3 .swiper-button-prev.swiper-button-disabled{
+    background-position: -224px -172px;
+    height: 32px;
+    width: 33px;
+}
 
 
+.section-group3.item4 .swiper{
+    overflow: hidden;
+}
 
+.section-group3.item4 .slide-area2 .swiper-slide{
+    width: auto !important;
+}
 
+.section-group3.item4 .swiper-slide .img-wrap{
+    width: 380px;
+    height: 380px;
+}
 
-
-
+.section-group3.item4 .text-wrap{}
+.section-group3.item4 .text-wrap h5{
+    display: inline;
+    padding-right: 26px;
+    line-height: 36px;
+    font-size: 25px;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+}
+.section-group3.item4 .text-wrap p{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.36px;
+    color: #000;
+}
 
 
 
