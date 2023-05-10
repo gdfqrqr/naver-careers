@@ -1,3 +1,95 @@
 @import './reset.css';
 @import './common.css';
+@import './font.css';
 /* 페이지가 변해도 따라오는것[헤더,푸터,큰틀] */
+
+header .header {
+    max-width: 1920px;
+    min-width: 768px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 104px 0 98px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: #fff;
+    width: 100%;
+}
+
+.header .logo a {
+    display: block;
+    background-position: -105px 0px;
+    width: 223px;
+    height: 35px;
+}
+
+.header .gnb-group1 {
+    display: flex;
+    align-items: center;
+}
+
+.header .gnb-group1 .gnb-area {
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+}
+
+.gnb-area .gnb-list {
+    position: relative;
+}
+
+.gnb-area .gnb-list:hover .gnb-txt::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #000;
+    content: '';
+}
+
+.gnb-group1 .gnb-list a {
+    font-weight: 600;
+}
+
+
+.gnb-group1 .gnb-list .nav-menu {
+    display: none;
+}
+
+.header .gnb-group2 .gnb-area {
+    display: flex;
+    gap: 20px;
+}
+
+
+.gnb-group2 .gnb-area .gnb-list .lang {
+    display: inline-block;
+    background-position: -122px -93px;
+    width: 10px;
+    height: 6px;
+    margin: 0 0 2px 3px;
+}
+
+.gnb-group2 .gnb-area .gnb-list.active .lang {
+    transform: rotate(-180deg);
+}
+
+.gnb-group2 .gnb-list a {
+    font-weight: 600;
+}
+
+.gnb-group2 .gnb-list .nav-menu2 {
+    position: absolute;
+    bottom: -38px;
+    left: -10px;
+    background: #fff;
+    z-index: 1;
+    padding: 4px 10px;
+}
+
+.gnb-group2 .gnb-list .nav-menu2.on {
+    display: none;
+}

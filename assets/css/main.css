@@ -1,0 +1,204 @@
+@import './animate.css';
+
+
+
+.section-group1 {
+    position: relative;
+}
+
+.section-group1 .slide-area video {
+    width: 100%;
+    height: 544px;
+    object-fit: cover;
+}
+
+.section-group1 .slide-area .text-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-group1 .swiper-slide .text-wrap h2 {
+    overflow: hidden;
+    font-size: 100px;
+    line-height: 1.2;
+    letter-spacing: -2.4px;
+    font-weight: 800;
+    white-space: nowrap;
+    color: #fff;
+    text-shadow: 6px 6px 18px rgba(0, 0, 0, 0.16);
+    animation: fade-out 0.2s linear forwards;
+    padding: 20px;
+}
+
+.section-group1 .swiper-slide.swiper-slide-active .text-wrap h2 {
+    opacity: 0;
+    animation: wave-in 0.3s ease-out forwards, fade 0.8s linear forwards;
+    animation-delay: 0.8s;
+}
+
+.section-group1 .search-area {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 1200px;
+    min-width: 1020px;
+    justify-content: space-between;
+}
+
+.section-group1 .search-area .search-box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.section-group1 .ico-search {
+    display: block;
+    background-position: -245px -40px;
+    width: 18px;
+    height: 18px;
+    margin: 0 28px 0 21px;
+}
+
+.section-group1 .search-box label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 9px;
+}
+
+.section-group1 .search-box input {
+    height: 54px;
+    border: none;
+    flex: 1;
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section-group1 .search-box input::placeholder {
+    color: #ccc;
+}
+
+.section-group1 .search-box input:focus,
+.section-group1 .search-box select:focus {
+    outline: none;
+}
+
+.section-group1 .search-box .select-box.on {
+    background-image: url(../img/ico_arrow_up.png);
+}
+
+.section-group1 .search-box .select-box {
+    border: none;
+    position: relative;
+    width: 100%;
+    flex: 1;
+    padding: 0 25px 0 9px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 54px;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #d0d0d0;
+    cursor: pointer;
+    background-image: url(../img/ico_arrow_down.png);
+    background-position: calc(100% - 10px) center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-size: 8px 5px;
+    appearance: none;
+}
+
+.section-group1 .select-box option[value="non-sel"] {
+    display: none;
+}
+
+.section-group1 .select-box option {
+    color: #000000;
+    font-weight: normal;
+}
+
+.section-group1 .btn-search {
+    width: 97px;
+    height: 54px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+.section-group2 {
+    padding: 126px 104px 89px;
+    background-color: #fafafa;
+    color: #000;
+}
+.section-group2 .tit-area{}
+.section-group2 .tit-area h3{
+    font-size: 64px;
+    letter-spacing: -0.64px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.section-group2 .tit-area p{
+    vertical-align: middle;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -0.44px;
+    font-weight: bold;
+}
+.section-group2 .tit-area a{
+    margin-left: 30px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    top: -10px;
+    font-weight: normal;
+    letter-spacing: -0.36px;
+}
+.section-group2 .tit-area a::before{
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    content: '';
+}
+.section-group2 .job-area{
+    margin-top: 70px;
+}
+.section-group2 .job-area .job-list{
+    display: flex;
+    align-items: center;
+}
+.section-group2 .job-list h4{
+    font-size: 38px;
+    letter-spacing: -0.34px;
+    font-weight: bold;
+}
+.section-group2 .job-list a{
+    position: relative;
+    top: -15px;
+    margin-left: 18px;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: -0.3px;
+}
+.section-group2 .job-list a::after{
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -14px;
+    background-position: -176px -105px;
+    width: 9px;
+    height: 9px;
+}
+.section-group2 .job-list p{}

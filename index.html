@@ -10,58 +10,73 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <body>
     <header>
-        <h1 class="logo">
-            <a href=""><span class="blind">로고</span></a>
-        </h1>
-        <div class="gnb-group1">
-            <ul class="gnb-area">
-                <li class="gnb-list">
-                    <a href="">Teams</a>
-                    <ul class="nav-menu">
-                        <li><a href="">Tech</a></li>
-                        <li><a href="">Design</a></li>
-                        <li><a href="">Service & Business</a></li>
-                        <li><a href="">Corporate</a></li>
-                    </ul>
-                </li>
-                <li class="gnb-list"><a href="">People</a></li>
-                <li class="gnb-list"><a href="">Benefits</a></li>
-                <li class="gnb-list"><a href="">Culture</a></li>
-                <li class="gnb-list"><a href="">Value</a></li>
-            </ul>
-        </div>
-        <div class="gnb-group2">
-            <ul class="gnb-area">
-                <li class="gnb-list"><a href="">Jobs</a></li>
-                <li class="gnb-list"><a href="">Login</a></li>
-                <li class="gnb-list"><a href="">FAQ</a></li>
-                <li class="gnb-list"><a href="">KR</a>
-                    <ul class="nav-menu2">
-                        <li><a href="">EN</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="header">
+            <div class="gnb-group1">
+                <h1 class="logo">
+                    <a href=""><span class="blind">로고</span></a>
+                </h1>
+                <ul class="gnb-area">
+                    <li class="gnb-list">
+                        <a href="" class="gnb-txt">Teams</a>
+                        <ul class="nav-menu">
+                            <li><a href="">Tech</a></li>
+                            <li><a href="">Design</a></li>
+                            <li><a href="">Service & Business</a></li>
+                            <li><a href="">Corporate</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list"><a href="" class="gnb-txt">People</a></li>
+                    <li class="gnb-list"><a href="" class="gnb-txt">Benefits</a></li>
+                    <li class="gnb-list"><a href="" class="gnb-txt">Culture</a></li>
+                    <li class="gnb-list"><a href="" class="gnb-txt">Value</a></li>
+                </ul>
+            </div>
+            <div class="gnb-group2">
+                <ul class="gnb-area">
+                    <li class="gnb-list"><a href="" class="gnb-txt">Jobs</a></li>
+                    <li class="gnb-list"><a href="" class="gnb-txt">Login</a></li>
+                    <li class="gnb-list"><a href="" class="gnb-txt">FAQ</a></li>
+                    <li class="gnb-list lang-box"><a href="">KR <span class="lang"></span></a>
+                        <ul class="nav-menu2 on">
+                            <li><a href="">EN</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
         <section class="section-group1">
-            <div class="slide-area swiper MySwiper">
+            <div class="slide-area swiper mySwiper">
                 <ul class="swiper-wrapper">
-                    <li class="swier-slide">
+                    <li class="swiper-slide">
+                        <video src="./assets/img/Joker.mp4" autoplay="" muted="" playsinline="" loop=""></video>
                         <div class="text-wrap">
-                            <video src=""></video>
                             <h2>Navigate New Horizons</h2>
                         </div>
                     </li>
-                    <li class="swier-slide">
+                    <li class="swiper-slide">
+                        <video src="./assets/img/Yann_Bastard.mp4" autoplay="" muted="" playsinline="" loop=""></video>
                         <div class="text-wrap">
-                            <video src=""></video>
+                            <h2>Board the Navership</h2>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <video src="./assets/img/Joker.mp4" autoplay="" muted="" playsinline="" loop=""></video>
+                        <div class="text-wrap">
+                            <h2>Navigate New Horizons</h2>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <video src="./assets/img/Yann_Bastard.mp4" autoplay="" muted="" playsinline="" loop=""></video>
+                        <div class="text-wrap">
                             <h2>Board the Navership</h2>
                         </div>
                     </li>
@@ -69,16 +84,33 @@
             </div>
             <div class="search-area">
                 <div class="search-box">
-                    <p>키워드</p>
+                      <span class="ico-search"></span>
+
+                    <label>키워드</label>
                     <input type="text" placeholder="프론트엔드 개발자">
                 </div>
                 <div class="search-box">
-                    <p>법인</p>
-                    <input type="text" placeholder="법인선택">
+                    <label>법인</label>
+                    <select class="select-box" >
+                        <option value="non-sel"  selected>법인선택</option>
+                        <option value="">NAVER Cloud</option>
+                        <option value="">WORKS MOBILE</option>
+                        <option value="">SNOW</option>
+                        <option value="">NAVER LABS</option>
+                        <option value="">NAVER WEBTOON</option>
+                        <option value="">NAVER FINANCIAL</option>
+                        <option value="">NAVER I&S</option>
+                    </select>
                 </div>
                 <div class="search-box">
-                    <p>직군</p>
-                    <input type="text" placeholder="직군선택">
+                    <label>직군</label>
+                    <select class="select-box" >
+                        <option value="non-sel" disabled selected>직군선택</option>
+                        <option value="">Tech</option>
+                        <option value="">Design</option>
+                        <option value="">Service & Business</option>
+                        <option value="">Corporate</option>
+                    </select>
                 </div>
                 <button class="btn-search">검색</button>
             </div>
@@ -219,6 +251,35 @@
 
 
     <script src="./assets/js/common.js"></script>
+    <script>
+        $(function(){
+            // 헤더 언어선택
+            $('.lang-box').click(function(e){
+                e.preventDefault();
+                $(this).toggleClass('active')
+                $('.nav-menu2').toggleClass('on')
+            });
+
+            // 메인슬라이드
+            var swiper = new Swiper(".mySwiper", {
+                speed:1000,
+                loop:true,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 6000,
+                    disableOnInteraction: false,
+                },
+            });
+
+            // 셀렉박스 옵션 선택시 
+            $('.select-box').click(function(){
+                $(this).toggleClass('on')
+            })
+            $('.select-box').on('change', function(){
+                $(this).css('color', 'black')
+            })
+        })
+    </script>
 </body>
 
 </html>
