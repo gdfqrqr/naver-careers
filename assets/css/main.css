@@ -1,6 +1,9 @@
 @import './animate.css';
 
 
+.wrapper {
+    overflow-x: hidden;
+}
 
 .section-group1 {
     position: relative;
@@ -139,26 +142,31 @@
     color: #000;
 }
 
-.section-group2 .job-area{
+.section-group2 .job-area {
     margin-top: 70px;
 }
-.section-group2 .job-area .job-list{
+
+.section-group2 .job-area .job-list {
     display: block;
 }
+
 .section-group2 .job-area .job-list:hover {
     background: #ebebeb;
 }
-.section-group2 .job-area .job-list .inner{
+
+.section-group2 .job-area .job-list .inner {
     display: flex;
     align-items: center;
 }
-.section-group2 .job-list h4{
+
+.section-group2 .job-list h4 {
     font-size: 38px;
     letter-spacing: -0.34px;
     font-weight: bold;
     width: 50%;
 }
-.section-group2 .job-list span{
+
+.section-group2 .job-list span {
     position: relative;
     top: -15px;
     margin-left: 18px;
@@ -166,7 +174,8 @@
     font-weight: normal;
     letter-spacing: -0.3px;
 }
-.section-group2 .job-list span::after{
+
+.section-group2 .job-list span::after {
     content: "";
     position: absolute;
     top: -1px;
@@ -175,7 +184,8 @@
     width: 9px;
     height: 9px;
 }
-.section-group2 .job-list p{
+
+.section-group2 .job-list p {
     padding: 20px 0 20px 15px;
     display: inline-block;
     vertical-align: top;
@@ -187,36 +197,45 @@
     -webkit-box-sizing: border-box;
 }
 
-.section-group3{
+.section-group3 {
     padding: 95px 0 0;
 }
-.section-group3 .swiper{
+
+.section-group3 .swiper {
     overflow: unset;
 }
-.section-group3 .tit-area{
+
+.section-group3 .tit-area {
     margin-bottom: 60px;
 }
-.section-group3 .slide-area2{}
-.section-group3 .slide-area2 .swiper-slide{
+
+.section-group3 .slide-area2 {}
+
+.section-group3 .slide-area2 .swiper-slide {
     padding-bottom: 68px;
     width: 1097px !important;
 
 }
-.section-group3 .swiper-slide .img-wrap{
+
+.section-group3 .swiper-slide .img-wrap {
     height: 520px;
 }
-.section-group3 .slide-area2 img{
+
+.section-group3 .slide-area2 img {
     object-fit: cover;
 }
-.section-group3 .slide-area2 .text-wrap{
+
+.section-group3 .slide-area2 .text-wrap {
     margin-top: 29px;
 }
-.section-group3 .text-wrap .tit-box{
+
+.section-group3 .text-wrap .tit-box {
     font-size: 25px;
     letter-spacing: -0.5px;
     font-weight: bold;
 }
-.section-group3 .tit-box span{
+
+.section-group3 .tit-box span {
     position: relative;
     top: -15px;
     font-size: 14px;
@@ -224,7 +243,8 @@
     letter-spacing: -0.36px;
     margin-left: 26px;
 }
-.section-group3 .tit-box span::before{
+
+.section-group3 .tit-box span::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -233,18 +253,22 @@
     height: 1px;
     background: #000;
 }
-.section-group3 .text-wrap .info-box{}
-.section-group3 .info-box p{
+
+.section-group3 .text-wrap .info-box {}
+
+.section-group3 .info-box p {
     margin-top: 16px;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: -0.28px;
 }
-.section-group3 .info-box span{
+
+.section-group3 .info-box span {
     position: relative;
     margin-left: 12px;
 }
-.section-group3 .info-box span::before{
+
+.section-group3 .info-box span::before {
     content: "";
     position: absolute;
     left: -8px;
@@ -253,48 +277,52 @@
     height: 10px;
     background-color: #000;
 }
-.section-group3 .button-wrap{
+
+.section-group3 .button-wrap {
     position: absolute;
     right: 0px;
     bottom: 0;
     display: flex;
     gap: 10px;
 }
-.section-group3 .swiper-button-next{
+
+.section-group3 .swiper-button-next {
     position: unset;
     background-position: -113px -172px;
     height: 32px;
     width: 33px;
 }
-.section-group3 .swiper-button-prev{
+
+.section-group3 .swiper-button-prev {
     position: unset;
     background-position: -187px -172px;
     height: 32px;
     width: 33px;
 }
 
-.section-group3 .swiper-button-prev.swiper-button-disabled{
+.section-group3 .swiper-button-prev.swiper-button-disabled {
     background-position: -224px -172px;
     height: 32px;
     width: 33px;
 }
 
 
-.section-group3.item4 .swiper{
+.section-group3.item4 .swiper {
     overflow: hidden;
 }
 
-.section-group3.item4 .slide-area2 .swiper-slide{
+.section-group3.item4 .slide-area2 .swiper-slide {
     width: auto !important;
 }
 
-.section-group3.item4 .swiper-slide .img-wrap{
+.section-group3.item4 .swiper-slide .img-wrap {
     width: 380px;
     height: 380px;
 }
 
-.section-group3.item4 .text-wrap{}
-.section-group3.item4 .text-wrap h5{
+.section-group3.item4 .text-wrap {}
+
+.section-group3.item4 .text-wrap h5 {
     display: inline;
     padding-right: 26px;
     line-height: 36px;
@@ -302,7 +330,8 @@
     letter-spacing: -0.5px;
     font-weight: bold;
 }
-.section-group3.item4 .text-wrap p{
+
+.section-group3.item4 .text-wrap p {
     margin-top: 20px;
     font-size: 18px;
     line-height: 30px;
@@ -310,44 +339,23 @@
     color: #000;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.section-group5{
+.section-group5 {
     padding: 95px 0 102px;
 }
-.section-group5 h5{
+
+.section-group5 h5 {
     font-size: 25px;
     line-height: 32px;
     letter-spacing: -0.25px;
     font-weight: bold;
 }
-.section-group5 a{
+
+.section-group5 a {
     font-size: 18px;
     letter-spacing: -0.36px;
 }
-.section-group5 span.apply-link{
+
+.section-group5 span.apply-link {
     margin-left: 11px;
     position: relative;
     top: 10px;
