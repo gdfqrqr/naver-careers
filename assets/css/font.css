@@ -1,30 +1,22 @@
-/* @font-face {
-    font-family: 'TTHoves';
-    src: url(../font/TT\ Hoves\ Pro\ Trial\ Light.ttf); 
-    font-weight: lighter;
-} */
 @font-face {
     font-family: 'TTHoves';
-    src: url(../font/TT\ Hoves\ Pro\ Trial\ Regular.ttf); 
-    font-weight: normal;
+    src: url(../font/TTHoves-Medium.woff) format('woff'); 
+    font-weight: 400;
 }
-/* @font-face {
+
+@font-face {
     font-family: 'TTHoves';
-    src: url(../font/TT\ Hoves\ Pro\ Trial\ Bold.ttf); 
-    font-weight: bold;
-} */
-/* @font-face {
-    font-family: 'NanumSquare';
-    src: url(../font/NanumSquareL.ttf); 
-    font-weight: lighter;
-} */
+    src: url(../font/TTHoves-DemiBold.woff) format('woff'); 
+    font-weight: 600;
+}
+
 @font-face {
     font-family: 'NanumSquare';
-    src: url(../font/NanumSquareR.ttf); 
-    font-weight: normal;
+    src: url(../font/NanumSquareOTFRegular.woff) format('woff'); 
+    font-weight: 400;
 }
-/* @font-face {
+@font-face {
     font-family: 'NanumSquare';
-    src: url(../font/NanumSquareB.ttf); 
-    font-weight: bold;
-} */
+    src: url(../font/NanumSquareOTFBold.woff) format('woff'); 
+    font-weight: 600;
+}

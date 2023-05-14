@@ -1,13 +1,6 @@
 /* 본문메인페이지 헤더,푸터도 포함될수도있다 */
 
-.blind {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-}
+.blind { position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; } 
 
 .header .logo a,
 .gnb-group2 .gnb-area .gnb-list .lang,
@@ -15,76 +8,44 @@
 .section-group2 .job-list span::after,
 .footer .footerRight-area button::before,
 .section-group5 span.apply-link,
-.section-group3 .swiper-button-next,
-.section-group3 .swiper-button-prev,
-.section-group3 .swiper-button-disabled,
-.section-group3 .swiper-button-disabled {
-    background-image: url(../img/sp-bg.png);
-    background-size: 328px 205px;
-}
+.section-group3 .button-wrap [class*='btn-'] { background-image: url(../img/sp-bg.png); background-size: 328px 205px; } 
 
 
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    position: relative;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
+.swiper { width: 100%; height: 100%; } 
+.swiper-slide { position: relative; } 
+.swiper-slide img { display: block; width: 100%; height: 100%; object-fit: cover; } 
 .swiper-button-prev:after,
-.swiper-button-next:after {
-    display: none;
-}
+.swiper-button-next:after { display: none; } 
+.inner { position: relative; max-width: 1408px; margin: 0 auto; padding: 0 104px; } 
 
-.inner {
-    position: relative;
-    max-width: 1408px;
-    /* min-width: 1230px; */
-    margin: 0 auto;
-    padding: 0 104px;
-}
+.tit-area h2 { font-size: 64px; letter-spacing: -0.64px; margin-bottom: 20px; font-weight: bold; } 
+.tit-area p { vertical-align: middle; font-size: 22px; line-height: 32px; letter-spacing: -0.44px; font-weight: bold; white-space: nowrap; } 
+.tit-area a { margin-left: 30px; position: relative; display: inline-block; vertical-align: top; font-size: 14px; top: -10px; font-weight: normal; letter-spacing: -0.36px; } 
+.tit-area a::before { position: absolute; bottom: 7px; width: 100%; height: 1px; background: #000; content: ''; } 
+.m-block {display: none;}
 
 
-.tit-area h3 {
-    font-size: 64px;
-    letter-spacing: -0.64px;
-    margin-bottom: 20px;
-    font-weight: bold;
+/* media */
+
+
+/* 랩탑 1025~1230 [1025]*/
+@media (max-width: 1230px){
+    .header .btn-menu, .header .logo a,
+    .section-group5 span.apply-link,
+    .footer .footerRight-area button.on::before,
+    .sc-search .search-area2 span::after,
+    .header .nav-item .ico-arrow { background-image: url(../img/sp-bg-mob.png); background-repeat: no-repeat; background-size: 195px 181px; } 
+ }
+
+/* 태블릿 768~1024 [768]]*/
+@media (max-width: 1024px){
+    .tit-area a {margin-left: 20px; top: 0; font-size: 12px; font-weight: normal;}
+    .tit-area a::before {bottom: 3px;}
+    .tit-area h2 { margin-bottom: 11px; font-size: 36px; line-height: 50px; letter-spacing: -0.7px;    font-weight: 500; } 
+    .tit-area p { padding-right: 20px; margin-bottom: 9px; font-size: 16px; line-height: 26px; letter-spacing: -0.32px; }
+    .inner {padding: 0 22px;}
+    .m-block{display: block;}
 }
 
-.tit-area p {
-    vertical-align: middle;
-    font-size: 22px;
-    line-height: 32px;
-    letter-spacing: -0.44px;
-    font-weight: bold;
-}
-
-.tit-area a {
-    margin-left: 30px;
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 14px;
-    top: -10px;
-    font-weight: normal;
-    letter-spacing: -0.36px;
-}
-
-.tit-area a::before {
-    position: absolute;
-    bottom: 7px;
-    width: 100%;
-    height: 1px;
-    background: #000;
-    content: '';
-}
+/* 모바일 320부터~767px [320] */
+@media (max-width: 767px) { } 

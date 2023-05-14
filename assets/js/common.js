@@ -7,42 +7,55 @@ $(function(){
     });
 
     //헤더 호버 메뉴
-    $('.gnb-area').mouseover(function(){
-        $(this).addClass('active');
-    })
-    $('.gnb-area').mouseout(function(e){
-        if($(this).has(e.target).length == 0){
-            $('.gnb-area').removeClass('active');
+    $('.gnb .nav-item').hover(function(){
+        if ($(this).find('.sub-list').length) {
+            $('.gnb').addClass('on')
+            $(this).find('.sub-list').addClass('on');
         }
-    })
+    },function(){
+        $('.gnb').removeClass('on')
+        $(this).find('.sub-list').removeClass('on');
+        }
+    )
+
+
     // 메인슬라이드
     var swiper = new Swiper(".mySwiper", {
+        touchRatio:0, // 터치액션 가능여부
         speed:1000,
         loop:true,
         centeredSlides: true,
         autoplay: {
             delay: 6000,
-            disableOnInteraction: false,
+            // disableOnInteraction: false, 터치액션 이후에제대로 실행될것인가 
         },
     });
     
-    var swiper = new Swiper(".mySwiper2", {
+    var swiper2 = new Swiper(".slide-area", {
         slidesPerView: 'auto',
         spaceBetween: 30,
         speed:700,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".btn-next",
+            prevEl: ".btn-prev",
         },
     });
-    var swiper = new Swiper(".mySwiper3", {
-        slidesPerView: 3,
+    var swiper3 = new Swiper(".slide-area2", {
+        slidesPerView: 1, /*모바일기준*/
         spaceBetween: 30,
         speed:700,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".btn-next",
+            prevEl: ".btn-prev",
         },
+        breakpoints: {
+            768 : {
+                slidesPerView:1
+            },
+            1025 : {
+                slidesPerView:3
+            },
+        }
     });
     // 셀렉박스 옵션 선택시 
     $('.select-box').click(function(){
@@ -59,3 +72,36 @@ $(function(){
     }) 
 
 })
+
+
+
+
+//media
+
+    $('.header .btn-menu').click(function(){
+        $('.header .btn-menu, .header .side-nav ').toggleClass('on')
+    })
+           
+
+    $('.header .nav-item').click(function(e){
+        e.preventDefault(); 
+        if ($(this).has('.sub-list').length) {
+            $(this).toggleClass('active');
+            
+        }
+    })
+
+    $('.search-area2 .search-more').click(function(){
+        $('.sc-search .search-popup').addClass('on')
+    })
+
+    // 전체label  누르면 한번에 선택하기
+    $('.chk-wrap.all label').click(function(){
+        box=$(this).data('box');
+        if($(this).siblings().prop('checked')){
+            $(box).find('input').prop('checked',false)
+        }else{
+            $(box).find('input').prop('checked',true)
+        }
+    })
+    
