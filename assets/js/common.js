@@ -71,7 +71,7 @@ $(function(){
         $('.footerRight-area ul').toggleClass('on')
     }) 
 
-})
+
 
 
 
@@ -95,13 +95,37 @@ $(function(){
         $('.sc-search .search-popup').addClass('on')
     })
 
+    $('.search-popup .btn-close').click(function(){
+        $('.search-popup').removeClass('on');
+    })
+
     // 전체label  누르면 한번에 선택하기
-    $('.chk-wrap.all label').click(function(){
-        box=$(this).data('box');
-        if($(this).siblings().prop('checked')){
-            $(box).find('input').prop('checked',false)
-        }else{
-            $(box).find('input').prop('checked',true)
-        }
+    $('.sub-all label').each(function(idx,el){
+        $(el).click(function(){
+            console.log(el);
+            box=$(this).data('box');
+            if($(this).siblings().prop('checked')){
+                $(box).find('input').prop('checked',false)
+            }else{
+                $(box).find('input').prop('checked',true)
+            }
+        })
     })
     
+    //직군펼치기
+    $('.job-list .job-item > span').each(function(idx,el){
+        $(el).click(function(){
+            // console.log($(el).siblings());
+            $(el).siblings('.sub-list').toggleClass('on')
+        })
+    })
+
+    // 직무펼치기
+    $('.search-popup .sub-item > span').each(function(idx,el){
+        $(el).click(function(){
+            $(el).siblings('.sub-list2').toggleClass('on')
+        })
+    })
+  
+    
+})

@@ -19,7 +19,7 @@
 .sc-search .search-box .select-box { border: none; position: relative; width: 100%; flex: 1; padding: 0 25px 0 9px; font-size: 14px; font-weight: bold; height: 54px; letter-spacing: -0.3px; text-align: left; color: #d0d0d0; cursor: pointer; background-image: url(../img/ico_arrow_down.png); background-position: calc(100% - 10px) center; background-repeat: no-repeat; background-color: #ffffff; background-size: 8px 5px; appearance: none; } 
 .sc-search .select-box option[value="non-sel"] { display: none; } 
 .sc-search .select-box option { color: #000000; font-weight: normal; } 
-.sc-search .btn-search { width: 97px; height: 54px; background-color: #000; color: #fff; font-weight: bold; } 
+.sc-search .search-area .btn-search { width: 97px; height: 54px; background-color: #000; color: #fff; font-weight: bold; } 
 
 
 .section-group2 { padding: 126px 0px 89px; background-color: #fafafa; color: #000; } 
@@ -82,25 +82,62 @@
  .sc-search .search-area2 { display: block; } 
  .sc-search .search-popup,
  .sc-search .search-area { display: none; } 
- .sc-search .search-popup.on { display: block; } 
- .sc-search .search-popup { position: relative; } 
- .sc-search .search-popup .test { position: fixed; z-index: 999; top: 0; right: 0; background: red; width: 100%; height: 100%; padding: 60px 32px; } 
-
-
-
-
-
-
-
  .sc-search .search-more { background-color: #ebebeb; width: calc(100% - 44px); position: absolute; top: 20px; } 
  .sc-search .search-area2 span { position: relative; display: block; padding: 10px 45px 10px 10px; font-size: 14px; line-height: 22px; letter-spacing: -0.28px; color: #696868; text-align: left; } 
  .sc-search .search-area2 span::after { content: ''; position: absolute; background-position: -140px -125px; width: 19px; height: 19px; right: 10px; } 
+ .sc-search .search-popup.on { display: block; } 
+ .sc-search .search-popup { position: relative; } 
+ .sc-search .search-popup .search-inner { position: fixed; z-index: 999; top: 0; right: 0; background: #fff; width: 100%; height: 100%; padding: 60px 32px; overflow: auto;} 
+
+.search-popup .search-inner { } 
+.search-popup .search-inner form { } 
+.search-popup form fieldset { border: none; } 
+.search-popup .input-wrap { position: relative; } 
+.search-popup .input-wrap input { border: none; line-height: 26px; letter-spacing: -0.28px; text-align: left; width: 100%; padding: 6px 30px 6px 0; font-size: 14px; border-bottom: 1px solid #d0d0d0; } 
+.search-popup .input-wrap input:focus { outline: none; border-bottom: 1px solid #000; } 
+.search-popup .btn-search { display: block; background-position: -140px -90px; width: 18px; height: 18px; position: absolute; right: 0; top: 50%; transform: translateY(-50%); } 
+
+.search-popup .job-wrap { margin-top: 45px; } 
+.search-popup .job-wrap .title { line-height: 26px; letter-spacing: -0.28px; font-weight: bold; font-size: 14px; } 
+.search-popup .job-wrap .job-list { margin-top: 8px; font-family: "NanumSquare", "나눔스퀘어", "돋움", dotum, arial, sans-serif;} 
+.search-popup .job-list .job-item { position: relative; padding-left: 19px; line-height: 26px; letter-spacing: -0.28px; } 
+.search-popup .job-list .job-item+.job-item { margin-top: 14px; } 
+.search-popup .job-list .job-item.on .sub-list{display: block;}
+.search-popup .job-list .job-item.on > .list,
+.search-popup .sub-item.on > .list{transform: rotate(180deg);}
+.search-popup .sub-item.on .sub-list2{display: block;}
+.search-popup .job-item .list { position: absolute; top: 9px; left: 2px; background-position: -136px -93px; width: 8px; height: 5px; } 
+.search-popup .sub-list,
+.search-popup .sub-list2 { display: none; } 
+.search-popup .sub-list.on,
+.search-popup .sub-list2.on { display: block; } 
+.search-popup .sub-list .sub-item {position: relative; padding-left: 19px; line-height: 26px; letter-spacing: -0.28px; margin-top: 14px; font-size: 14px;} 
+.search-popup .sub-list .sub-all {margin-top: 14px; } 
+.search-popup .sub-list2 {margin-top: 14px; } 
+.search-popup .sub-list2 .sub-item2 {margin-top: 14px; } 
+.search-popup .filter-wrap { margin-top: 14px; } 
+.search-popup .filter-wrap input,
+.sub-all input,
+.sub-item2 input { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); } 
+.search-popup .filter-wrap label,
+.sub-all label, { font-size: 14px; } 
+.search-popup .filter-wrap label::before,
+.sub-all label::before,
+.sub-item2 label::before{ content: ''; display: inline-block; width: 10px; height: 10px; border: 1px solid #d0d0d0; border-radius: 50%; margin-right: 8px; } 
+.search-popup .filter-wrap input:checked+label::before,
+.sub-all input:checked+label::before,
+.sub-item2  input:checked+label::before { background: #000; } 
+.search-popup .btn-clear { margin-top: 42px; font-size: 12px; line-height: 22px; letter-spacing: -0.24px;text-decoration: underline; } 
+.search-popup .sub-item2 label{font-size: 14px; line-height: 26px; letter-spacing: -0.28px; }
 
  .chk-wrap input { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); } 
  .chk-wrap label::before { display: inline-block; content: ''; width: 10px; height: 10px; border: 1px solid #000; } 
  .chk-wrap input:checked+label::before { background: #000; } 
+.search-popup .btn-close { position: absolute; top: 24px; left: 22px; background-size: 195px 181px; background-position: -110px -28px; width: 14px; height: 14px;  } 
 
  .section-group2 { padding: 81px 0 50px; } 
+ .section-group2 .tit-area p {white-space: pre-wrap;}
+ .section-group2 .tit-area a {margin-left: 0;}
  .section-group2 .job-list h3 { width: 100%; padding: 0; font-size: 24px; line-height: 38px; letter-spacing: -0.48px; font-weight: normal; } 
  .section-group2 .job-list span { font-size: 14px; top: -10px; margin-left: 14px; } 
  .section-group2 .job-list p { padding: 0; width: 100%; font-size: 16px; line-height: 26px; letter-spacing: -0.32px; } 
@@ -109,6 +146,7 @@
  .section-group2 .job-area .job-list .inner { flex-direction: column; } 
 
  .section-group3 .tit-area { margin: 0; } 
+ .section-group3 .tit-area p {white-space: normal;} 
  .section-group3 .swiper { padding-bottom: 46px; } 
  .section-group3 .swiper-slide { margin: 25px 0 0; } 
  .section-group3 .swiper-slide .img-wrap { max-width: 100%; padding-bottom: 100%; } 

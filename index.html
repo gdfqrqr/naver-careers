@@ -61,7 +61,7 @@
                 </div>
             </div>
             <nav class="side-nav">
-                ` <ul class="nav-list">
+                <ul class="nav-list">
                     <li class="nav-item">
                         <a href="" class="nav-link">
                             <span>Teams <i class="ico-arrow"></i></span>
@@ -155,12 +155,607 @@
                         <button class="search-more"><span>Search Jobs</span></button>
                     </div>
                     <div class="search-popup">
-                        <div class="test">
-                            <div class="chk-wrap all">
-                                <input type="checkbox" id="tech">
-                                <label for="tech" data-box="#techBox">하위1</label>
+                        <div class="search-inner">
+                            <form action="">
+                                <fieldset>
+                                    <legend class="blind">검색창</legend>
+                                    <div class="input-wrap">
+                                        <input type="text" placeholder="Search Jobs">
+                                        <button class="btn-search"></button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <div class="job-wrap">
+                                <strong class="title">직군/직무</strong>
+                                <ul class="job-list">
+                                    <li class="job-item">
+                                        <i class="list"></i>
+                                        <span>Tech</span>
+                                        <ul class="sub-list">
+                                            <li class="sub-all">
+                                                <input type="checkbox"  id="select-all">
+                                                <label for="select-all" data-box=".box">전체</label>
+                                            </li>
+                                            <li class="sub-item box">
+                                                <i class="list"></i>
+                                                <span>Software Development</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select">
+                                                        <label for="select">Frontend</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select2">
+                                                        <label for="select2">Android</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select3">
+                                                        <label for="select3">iOS</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select4">
+                                                        <label for="select4">Backend</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select5">
+                                                        <label for="select5">AI/ML</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select6">
+                                                        <label for="select6">Data Engineering</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select7">
+                                                        <label for="select7">Embedded SW</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select8">
+                                                        <label for="select8">Graphics</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select9">
+                                                        <label for="select9">공통</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box">
+                                                <i class="list"></i>
+                                                <span>Hardware Development</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select10">
+                                                        <label for="select10">Hardware</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box">
+                                                <i class="list"></i>
+                                                <span>Infra Engineering</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select11">
+                                                        <label for="select11">Infra Engineering</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select12">
+                                                        <label for="select12">Data Center Engineering</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box">
+                                                <i class="list"></i>
+                                                <span>Security</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select13">
+                                                        <label for="select13">Security</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box">
+                                                <i class="list"></i>
+                                                <span>Tech Operations</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select14">
+                                                        <label for="select14">Tech Staff</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select15">
+                                                        <label for="select15">QA</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box">
+                                                <i class="list"></i>
+                                                <span>공통</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select16">
+                                                        <label for="select16">공통</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="job-item">
+                                        <i class="list"></i>
+                                        <span>Design</span>
+                                        <ul class="sub-list">
+                                            <li class="sub-all">
+                                                <input type="checkbox"  id="select-all2">
+                                                <label for="select-all2" data-box=".box2">전체</label>
+                                            </li>
+                                            <li class="sub-item box2">
+                                                <i class="list"></i>
+                                                <span>Product Design</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select17">
+                                                        <label for="select17">Product Design</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box2">
+                                                <i class="list"></i>
+                                                <span>Visual Comm. &amp; Brand Design</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select18">
+                                                        <label for="select18">Visual Comm. &amp; Brand Design</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box2">
+                                                <i class="list"></i>
+                                                <span>Interactive Design</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select19">
+                                                        <label for="select19">Interactive Design</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box2">
+                                                <i class="list"></i>
+                                                <span>Experience Insight &amp; Planning</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select20">
+                                                        <label for="select20">Experience Insight &amp; Planning</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box2">
+                                                <i class="list"></i>
+                                                <span>Content Writing</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select21">
+                                                        <label for="select21">Content Writing</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box2">
+                                                <i class="list"></i>
+                                                <span>공통</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select22">
+                                                        <label for="select22">공통</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="job-item">
+                                        <i class="list"></i>
+                                        <span>Service &amp; Business</span>
+                                        <ul class="sub-list">
+                                            <li class="sub-all">
+                                                <input type="checkbox"  id="select-all3">
+                                                <label for="select-all3" data-box=".box3">전체</label>
+                                            </li>
+                                            <li class="sub-item box3">
+                                                <i class="list"></i>
+                                                <span>Product Development</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select23">
+                                                        <label for="select23">Product Development</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box3">
+                                                <i class="list"></i>
+                                                <span>Content Development</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select24">
+                                                        <label for="select24">Content Development</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box3">
+                                                <i class="list"></i>
+                                                <span>Business Development</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select25">
+                                                        <label for="select25">Business Development</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box3">
+                                                <i class="list"></i>
+                                                <span>Trust&amp;Safety</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select26">
+                                                        <label for="select26">Trust&amp;Safety</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box3">
+                                                <i class="list"></i>
+                                                <span>공통</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select27">
+                                                        <label for="select27">공통</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="job-item">
+                                        <i class="list"></i>
+                                        <span>Corporate</span>
+                                        <ul class="sub-list">
+                                            <li class="sub-all">
+                                                <input type="checkbox"  id="select-all4">
+                                                <label for="select-all4" data-box=".box4">전체</label>
+                                            </li>
+                                            <li class="sub-item box4">
+                                                <i class="list"></i>
+                                                <span>Marketing</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select28">
+                                                        <label for="select28">Marketing</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select29">
+                                                        <label for="select29">Brand Planning</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select30">
+                                                        <label for="select30">Content Creative</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select31">
+                                                        <label for="select31">User Research & Data Insight</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select32">
+                                                        <label for="select32">Marketing 공통</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box4">
+                                                <i class="list"></i>
+                                                <span>Finance</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select33">
+                                                        <label for="select33">재무기획</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select34">
+                                                        <label for="select34">회계</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select35">
+                                                        <label for="select35">세무</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select36">
+                                                        <label for="select36">자금</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select37">
+                                                        <label for="select37">Finance 공통</label>
+                                                    </li>
+                                                   
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box4">
+                                                <i class="list"></i>
+                                                <span>Service Infra</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select38">
+                                                        <label for="select38">소싱</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select39">
+                                                        <label for="select39">운영관리</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select40">
+                                                        <label for="select40">빌링</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select41">
+                                                        <label for="select41">구매</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select42">
+                                                        <label for="select42">부동산</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box4">
+                                                <i class="list"></i>
+                                                <span>Partner Growth Support</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select43">
+                                                        <label for="select43">Partner Growth Support</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box4">
+                                                <i class="list"></i>
+                                                <span>Corporate Development</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select44">
+                                                        <label for="select44">투자</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select45">
+                                                        <label for="select45">Investor Relations</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select46">
+                                                        <label for="select46">Corporate Strategy</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select47">
+                                                        <label for="select47">ESG</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box4">
+                                                <i class="list"></i>
+                                                <span>Compliance</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select48">
+                                                        <label for="select48">Risk Managerment</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select49">
+                                                        <label for="select49">내부감사</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box4">
+                                                <i class="list"></i>
+                                                <span>Legal</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select50">
+                                                        <label for="select50">법무</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select51">
+                                                        <label for="select51">지식재산</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box4">
+                                                <i class="list"></i>
+                                                <span>Privacy</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select52">
+                                                        <label for="select52">개인정보보호</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select53">
+                                                        <label for="select53">통신비밀보호</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box4">
+                                                <i class="list"></i>
+                                                <span>Communication</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select54">
+                                                        <label for="select54">Strategic Communication</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select55">
+                                                        <label for="select55">산업및정책연구</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select56">
+                                                        <label for="select56">Corporate Experience</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select57">
+                                                        <label for="select57">Communication 공통</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box4">
+                                                <i class="list"></i>
+                                                <span>HR</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select58">
+                                                        <label for="select58">Human Resources</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select59">
+                                                        <label for="select59">Employee Relations</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select60">
+                                                        <label for="select60">Talent Acquisition</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select61">
+                                                        <label for="select61">Culture Experience</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select62">
+                                                        <label for="select62">HR 공통</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box4">
+                                                <i class="list"></i>
+                                                <span>Assist</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select63">
+                                                        <label for="select63">채용운영</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select64">
+                                                        <label for="select64">통번역</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select65">
+                                                        <label for="select65">비서</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select66">
+                                                        <label for="select66">기사</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select67">
+                                                        <label for="select67">Health Care</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select68">
+                                                        <label for="select68">운영지원</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-item box4">
+                                                <i class="list"></i>
+                                                <span>Shared Service</span>
+                                                <ul class="sub-list2">
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select69">
+                                                        <label for="select69">급여</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select70">
+                                                        <label for="select70">복리후생</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select71">
+                                                        <label for="select71">자산관리</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select72">
+                                                        <label for="select72">총무</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select73">
+                                                        <label for="select73">시설인프라</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select74">
+                                                        <label for="select74">공간운영</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select75">
+                                                        <label for="select75">시스템/안전</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select76">
+                                                        <label for="select76">재무지원</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select77">
+                                                        <label for="select77">구매</label>
+                                                    </li>
+                                                    <li class="sub-item2">
+                                                        <input type="checkbox"  id="select78">
+                                                        <label for="select78">건축</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="chk-inner" id="techBox">
+                            <div class="job-wrap">
+                                <strong class="title">고용형태</strong>
+                                <div class="filter-wrap">
+                                    <input type="checkbox" id="filter1">
+                                    <label for="filter1">정규</label>
+                                </div>
+                                <div class="filter-wrap">
+                                    <input type="checkbox" id="filter2">
+                                    <label for="filter2">계약</label>
+                                </div>
+                                <div class="filter-wrap">
+                                    <input type="checkbox" id="filter3">
+                                    <label for="filter3">인턴</label>
+                                </div>
+                            </div>
+                            <div class="job-wrap">
+                                <strong class="title">경력</strong>
+                                <div class="filter-wrap">
+                                    <input type="checkbox" id="filter4">
+                                    <label for="filter4">신입</label>
+                                </div>
+                                <div class="filter-wrap">
+                                    <input type="checkbox" id="filter5">
+                                    <label for="filter5">경력</label>
+                                </div>
+                                <div class="filter-wrap">
+                                    <input type="checkbox" id="filter6">
+                                    <label for="filter6">무관</label>
+                                </div>
+                            </div>
+                            <div class="job-wrap">
+                                <strong class="title">근무지</strong>
+                                <div class="filter-wrap">
+                                    <input type="checkbox" id="filter7">
+                                    <label for="filter7">분당</label>
+                                </div>
+                                <div class="filter-wrap">
+                                    <input type="checkbox" id="filter8">
+                                    <label for="filter8">서울</label>
+                                </div>
+                                <div class="filter-wrap">
+                                    <input type="checkbox" id="filter9">
+                                    <label for="filter9">춘천</label>
+                                </div>
+                                <div class="filter-wrap">
+                                    <input type="checkbox" id="filter10">
+                                    <label for="filter10">세종</label>
+                                </div>
+                                <div class="filter-wrap">
+                                    <input type="checkbox" id="filter11">
+                                    <label for="filter11">글로벌</label>
+                                </div>
+                            </div>
+
+                            <!-- <div class="chk-wrap all">
+                                <input type="checkbox" id="tech">
+                                <label for="tech" data-box="#box">하위1</label>
+                            </div>
+                            <div class="chk-inner">
                                 <div class="chk-wrap">
                                     <input type="checkbox" id="tech1">
                                     <label for="tech1">하위12</label>
@@ -173,7 +768,9 @@
                                     <input type="checkbox" id="tech3">
                                     <label for="tech3">하위41</label>
                                 </div>
-                            </div>
+                            </div> -->
+                            <button class="btn-close"></button>
+                            <button class="btn-clear">Clear filters</button>
                         </div>
                     </div>
                 </div>
@@ -346,10 +943,6 @@
             </div>
         </footer>
     </div>
-
-
-
-
     <script src="./assets/js/common.js"></script>
     <script>
 
