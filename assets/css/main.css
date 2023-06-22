@@ -87,7 +87,7 @@
  .sc-search .search-area2 span::after { content: ''; position: absolute; background-position: -140px -125px; width: 19px; height: 19px; right: 10px; } 
  .sc-search .search-popup.on { display: block; } 
  .sc-search .search-popup { position: relative; } 
- .sc-search .search-popup .search-inner { position: fixed; z-index: 999; top: 0; right: 0; background: #fff; width: 100%; height: 100%; padding: 60px 32px; overflow: auto;} 
+ .sc-search .search-popup .search-inner { position: fixed; top: 0; right: 0; background: #fff; width: 100%; height: 100%; padding: 60px 32px; overflow: auto;} 
 
 .search-popup .search-inner { } 
 .search-popup .search-inner form { } 

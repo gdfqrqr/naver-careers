@@ -3,7 +3,7 @@ $(function () {
     $('.lang-box').click(function (e) {
         e.preventDefault();
         $(this).toggleClass('active')
-        $('.nav-menu2').toggleClass('on')
+        $('.nav-menu2').toggleClass('off')
     });
 
     //헤더 호버 메뉴
@@ -84,25 +84,26 @@ $(function () {
     })
 
 
-    $('.header .nav-item').click(function (e) {
-        e.preventDefault();
-        if ($(this).has('.sub-list').length) {
-            $(this).toggleClass('active');
-        }
-    })
+    // $('.header .nav-item').click(function (e) {
+    //     e.preventDefault();
+    //     if ($(this).has('.sub-list').length) {
+    //         $(this).toggleClass('active');
+    //     }
+    // })
 
     $('.search-area2 .search-more').click(function () {
         $('.sc-search .search-popup').addClass('on')
+        $('header').css('z-index', '10') 
     })
 
     $('.search-popup .btn-close').click(function () {
         $('.search-popup').removeClass('on');
+        $('header').css('z-index', '11') 
     })
 
     // 전체label  누르면 한번에 선택하기
     $('.sub-all label').each(function (idx, el) {
         $(el).click(function () {
-            console.log(el);
             box = $(this).data('box');
             if ($(this).siblings().prop('checked')) {
                 $(box).find('input').prop('checked', false)
@@ -115,7 +116,6 @@ $(function () {
     //직군펼치기
     $('.job-list .job-item > span').each(function (idx, el) {
         $(el).click(function () {
-            // console.log($(el).siblings());
             $(el).siblings('.sub-list').toggleClass('on')
         })
     })
