@@ -107,6 +107,7 @@
 .search-popup .sub-item.on > .list{transform: rotate(180deg);}
 .search-popup .sub-item.on .sub-list2{display: block;}
 .search-popup .job-item .list { position: absolute; top: 9px; left: 2px; background-position: -136px -93px; width: 8px; height: 5px; } 
+.search-popup .job-item .list.on{transform: rotate(180deg);}
 .search-popup .sub-list,
 .search-popup .sub-list2 { display: none; } 
 .search-popup .sub-list.on,
