@@ -4,8 +4,8 @@
 
 .wrapper { overflow-x: hidden; padding-top: 64px; } 
 
-.header { position: fixed; top: 0; z-index: 11; width: 100%; } 
-.header .h-inner { height: 64px; max-width: 1920px; padding: 0 104px 0 98px; display: flex; justify-content: space-between; margin: 0 auto; background: #fff; } 
+.header { position: fixed; top: 0; z-index: 11; width: 100%;  background: #fff; } 
+.header .h-inner { height: 64px; max-width: 1920px; padding: 0 104px 0 98px; display: flex; justify-content: space-between; margin: 0 auto;} 
 .header .logo { display: flex; align-items: center; } 
 .header .logo a { display: block; background-position: -105px 0px; width: 223px; height: 35px; } 
 .header .gnb-group1 { display: flex; } 
